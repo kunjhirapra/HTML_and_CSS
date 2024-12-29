@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -45,6 +46,7 @@ h3 {
   text-align: center;
   text-transform: uppercase;
   color: #f15d5d;
+  margin-bottom: 30px;
 }
 
 h4 {
@@ -181,4 +183,45 @@ to make it easy to remember you can use "LVHA"*/
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+/* FLOATS */
+
+.author-img {
+  float: left;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  float: left;
+  width: 800px;
+}
+
+aside {
+  float: right;
+  width: 350px;
+  padding: 30px 20px;
+}
+
+footer {
+  clear: both;
 }
