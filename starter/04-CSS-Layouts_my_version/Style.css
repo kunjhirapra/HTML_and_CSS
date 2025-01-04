@@ -1,6 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
+  /* border-top: 4px solid #4fb9b9; */
 }
 
 body {
@@ -54,13 +56,12 @@ h4 {
 }
 
 nav {
-  font-size: 30px;
+  font-size: 18px;
 }
 
 nav a:link {
   display: inline-block;
   margin-right: 20px;
-  margin-top: 10px;
 }
 
 nav a:link:last-child {
@@ -74,7 +75,7 @@ nav a:link:last-child {
 }
 
 article {
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 p {
@@ -96,18 +97,18 @@ p {
   margin-bottom: 30px;
 }
 
-.related_author {
+.related-author {
   font-size: 25px;
   font-weight: bold;
 }
 
-.related_posts {
+.related-posts {
   list-style: none;
 }
 
 .main_header {
   background-color: #f6f6f6;
-  margin-bottom: 60px;
+  /* margin-bottom: 40px; */
   padding: 20px 40px;
 }
 
@@ -123,7 +124,7 @@ aside {
   padding-bottom: 50px; 
           or        */
   padding: 50px 0;
-  width: 750px;
+  /* width: 750px; */
 }
 
 ul,
@@ -138,10 +139,10 @@ li {
 
 /* psuedo classes */
 
-li:first-child {
+/* li:first-child {
   color: #4fb9b9;
   font-weight: bold;
-}
+} */
 
 /* Styling Hyperlinks */
 
@@ -185,7 +186,7 @@ to make it easy to remember you can use "LVHA"*/
 
 /* FLOATS */
 
-.author-img {
+/* .author-img {
   float: left;
   margin-bottom: 20px;
 }
@@ -226,6 +227,80 @@ aside {
 
 footer {
   clear: both;
-}
+} */
 
 /* FLEXBOX */
+
+/* DEFAULTS:
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto; 
+*/
+
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.author {
+  margin-bottom: 0px;
+}
+
+.related-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.related-author {
+  font-size: 12px;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+/* FLEXBOX LAYOUTS */
+
+/* 
+.layout {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+aside {
+  flex-basis: 300px;
+}*/
+
+/* CSS GRID LAYOUTS */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  align-items: start;
+  row-gap: 60px;
+}
+
+.main_header {
+  grid-column: 1 / -1;
+}
+
+footer {
+  grid-column: 1 / -1;
+}
