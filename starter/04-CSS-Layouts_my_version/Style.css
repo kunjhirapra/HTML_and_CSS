@@ -2,12 +2,13 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  /* border-top: 4px solid #4fb9b9; */
 }
 
 body {
   font-family: sans-serif;
   position: relative;
+  border-top: 5px solid #4fb9b9;
+  border-bottom: 5px solid #4fb9b9;
 }
 
 h1,
