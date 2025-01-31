@@ -9,15 +9,15 @@
     />
     <style>
       /*
-			SPACING SYSTEM (px)
-			2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
-			FONT SIZE SYSTEM (px)
-			10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
-			MAIN COLOUR: #099268
-			GRAY COLUR:#495057  
-			*/
+      MAIN COLOUR: #099268
+      GRAY COLUR:#495057
+      */
 
       * {
         margin: 0;
@@ -37,11 +37,16 @@
         display: flex;
         align-items: center;
         border-radius: 8px;
+        position: relative;
 
         width: 800px;
         margin: 100px auto;
-        padding: 24px;
-        padding-left: 86px;
+        /* padding: 24px;
+        padding-left: 86px; 
+        padding-right: 48px;
+        */
+        /* It goes clock-wise top, right, bottom, left */
+        padding: 24px 48px 24px 86px;
         gap: 86px;
       }
 
@@ -73,6 +78,68 @@
         font-size: 12px;
         color: #c3fae8;
       }
+
+      .btn {
+        background-color: #fff;
+        border: none;
+        height: 40px;
+        width: 40px;
+
+        position: absolute;
+        border-radius: 50%;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icon {
+        height: 24px;
+        width: 24px;
+        stroke-width: 2px;
+        stroke: #099268;
+      }
+
+      .btn-left {
+        left: 0;
+        top: 50%;
+
+        transform: translate(-50%, -50%);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn-right {
+        right: 0;
+        top: 50%;
+
+        transform: translate(50%, -50%);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+      }
+
+      .dots {
+        left: 50%;
+        bottom: 0;
+
+        transform: translate(-50%, 40px);
+        position: absolute;
+
+        display: flex;
+        gap: 12px;
+      }
+
+      .dot {
+        background-color: #fff;
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        border: 2px solid #099268;
+        cursor: pointer;
+      }
+
+      .dot-fill {
+        background-color: #099268;
+      }
     </style>
     <title>Carousel Component</title>
   </head>
@@ -90,7 +157,7 @@
           Senior product manager at Relience Comercial
         </p>
       </blockquote>
-      <button class="btn">
+      <button class="btn btn-left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -106,7 +173,7 @@
           />
         </svg>
       </button>
-      <button class="btn">
+      <button class="btn btn-right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -122,6 +189,12 @@
           />
         </svg>
       </button>
+      <div class="dots">
+        <button class="dot dot-fill">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
     </div>
   </body>
 </html>
