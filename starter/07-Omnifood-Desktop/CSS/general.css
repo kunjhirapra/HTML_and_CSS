@@ -86,19 +86,22 @@ body {
   gap: 9.6rem;
 }
 
+
 .btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-
+  
   border: none;
   cursor: pointer;
+  font-family: inherit;
 
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  border-radius: 10px;
+  border-radius: 9px;
   text-decoration: none;
+  transition: all 0.3s;
 }
 
 .btn-form{
