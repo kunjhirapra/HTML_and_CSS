@@ -498,7 +498,8 @@
 }
 
 .cta .secondary-heading {
-  color: #2e1907;
+  /* color: #2e1907; */
+  color: inherit;
   margin-bottom: 3.2rem;
 }
 
@@ -506,6 +507,36 @@
   font-size: 1.8rem;
   line-height: 1.6;
 }
+
+.cta-form{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+
+.cta-form label{
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input{
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: inherit; 
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+  border-radius: 9px;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+
 
 .cta-image-box {
   background-image: linear-gradient(
