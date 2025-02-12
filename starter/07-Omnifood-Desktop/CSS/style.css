@@ -284,27 +284,6 @@
   margin-bottom: 4.8rem;
 } */
 
-.list {
-  list-style: none;
-
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  height: 3rem;
-  width: 3rem;
-  color: #cf711f;
-}
-
 .all-recipes {
   font-size: 1.8rem;
 }
@@ -314,19 +293,35 @@
 /*******************************/
 
 .section-testimonial {
-  padding: 9.6rem 0;
+  background-color: #f8d8bd;
+
+  display: grid;
+  grid-template-columns: 55fr 45fr;
 }
 
-.testimonials {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.2rem;
+.testimonials-container {
+  padding: 9.6rem;
+}
+
+.testimonial-person {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.testimonial {
+  padding-left: 6.4rem;
 }
 
 .testimonial-img {
+  display: inline-block;
   width: 6.4rem;
   border-radius: 50%;
-  margin-bottom: 1.2rem;
+}
+
+.testimonial-quote {
+  margin-bottom: 3.2rem;
 }
 
 .testimonial-text {
@@ -338,5 +333,141 @@
 
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
+}
+
+.gallery {
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+}
+
+.gallery-img {
+  width: 100%;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.gallery-img:hover {
+  transform: scale(1.1);
+}
+
+/*******************************/
+/* Pricing section */
+/*******************************/
+
+.section-pricing {
+  padding: 9.6rem;
+}
+
+.price-plan {
+  border-radius: 11px;
+
+  font-size: 1.8rem;
+  text-align: center;
+  width: 75%;
+  transition: all 0.4s;
+}
+
+.price-plan:hover {
+  transform: translate(0, -1.2rem);
+}
+
+.price-plan-starter {
+  border: 2px solid #fdf2e9;
+  justify-self: end;
+  padding: 4.6rem;
+}
+
+.price-plan-complete {
+  background-color: #fdf2e9;
+  justify-self: start;
+  padding: 4.8rem;
+
+  position: relative;
+  overflow: hidden;
+}
+.price-plan-complete::after {
+  content: "Best value";
+  position: absolute;
+  top: 6%;
+  right: -18%;
+
+  background-color: #ffd43b;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  color: #cf711f;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  color: #333;
+  font-size: 6.2rem;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+
+.plan-info {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+
+/***************************** */
+/* features*/
+/****************************** */
+
+.feature {
+  padding: 9.6rem 0;
+}
+
+.feature-icon {
+  color: #e67e22;
+  background-color: rgb(255, 243, 232);
+  border-radius: 50%;
+  height: 3.6rem;
+  width: 3.6rem;
+  padding: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.feature-title {
+  font-size: 2.4rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
