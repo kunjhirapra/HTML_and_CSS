@@ -86,12 +86,11 @@ body {
   gap: 9.6rem;
 }
 
-
 .btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-  
+
   border: none;
   cursor: pointer;
   font-family: inherit;
@@ -104,11 +103,16 @@ body {
   transition: all 0.3s;
 }
 
-.btn-form{
+.btn-form {
   color: #fdf2e9;
-  background-color: #2e1907;
+  background-color: #45260a;
   align-self: end;
   padding: 1.2rem;
+}
+
+.btn-form:hover {
+  color: #555;
+  background-color: #fff;
 }
 
 .btn:hover,
@@ -246,6 +250,11 @@ body {
   height: 3rem;
   width: 3rem;
   color: #cf711f;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 .margin-right-sm {
