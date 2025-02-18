@@ -10,14 +10,204 @@
         <h1 class="test">HTML Forms Elements & Attributes</h1>
         <h2 class="test">Html Form Attributes</h2>
         <div>
-            <h3>Action Attribute</h3>
-            <form action="/action_page.php">
+            <span>Action Attribute</span>
+            <form action="/action_page.php" autocomplete="on">
                 <label for="fname">First name:</label><br>
                 <input type="text" id="fname" name="fname" placeholder="ex. John"><br>
                 <label for="lname">Last name:</label><br>
                 <input type="text" id="lname" name="lname" placeholder="ex. Doe"><br><br>
                 <input type="submit" value="Submit">
-                <p>the action attribute takes effect after you press submit button</p>
+                <span class="test">the action attribute takes effect after you press submit button</span>
+              </form>
+        </div>
+        <h2>Form Elements</h2>
+        <div class="test">
+            <span>Select, Size & option</span>
+            <label for="cars">Choose a car:</label>
+            <select id="cars" name="cars" size="5">
+              <option value="volvo">Volvo</option>
+              <option value="saab">Saab</option>
+              <option value="fiat">Fiat</option>
+              <option value="audi">Audi</option>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+              <option value="audi">Audi</option>
+            </select>
+        </div>
+        <div class="test">
+            <textarea name="message" rows="5" cols="30">The cat was playing in the garden.
+            </textarea>
+        </div>
+        <div class="test">
+            <span>Button</span>
+            <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+        </div>
+        <div class="test">
+            <span>Fieldset & Legend elements</span>
+            <form action="/action_page.php">
+                <fieldset>
+                  <legend>Personalia:</legend>
+                  <label for="fname">First name:</label><br>
+                  <input type="text" id="fname" name="fname" value="John"><br>
+                  <label for="lname">Last name:</label><br>
+                  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                  <input type="submit" value="Submit">
+                </fieldset>
+              </form>
+        </div>
+        <div class="test">
+            <span>Datalist</span>
+            <form action="/action_page.php">
+                <input list="browsers">
+                <datalist id="browsers">
+                  <option value="Edge">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+              </form>
+        </div>
+        <div class="test">
+            <span>Output element</span>
+            <form action="/action_page.php"
+                oninput="x.value=parseInt(a.value)+parseInt(b.value)"> 0
+                <input type="range"  id="a" name="a" value="50"> 100 +
+                <input type="number" id="b" name="b" value="50"> =
+                <output name="x" for="a b"></output>
+                <br><br>
+                <input type="submit">
+            </form>
+        </div>
+        <h2>different input types you can use in HTML</h2>
+        <div class="test">
+            <span>Form Input type: Password</span>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd">
+              </form>
+        </div>
+        <div class="test">
+            <span>Form Input type: Reset</span>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder="Doe"><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </form>
+        </div>
+        <div class="test">
+            <span>Radio button</span>
+            <span>Choose your favorite Web language:</span>
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </form>
+        </div>
+        <div class="test">
+            <span>Form Input Type: Checkbox</span>
+            <form>
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                <label for="vehicle1"> I have a bike</label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                <label for="vehicle2"> I have a car</label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                <label for="vehicle3"> I have a boat</label>
+              </form>
+        </div>
+        <div class="test">
+            <span>Form Input Type: Color</span>
+            <form>
+                <label for="favcolor">Select your favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor">
+              </form>
+        </div>
+        <div class="test">
+            <span>Form Input Type: Calander</span>
+            <form>
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+            </form>
+        </div>
+        <div class="test">
+            <span>Form Input Type: Upload file</span>
+            <form>
+                <label for="myfile">Select a file:</label>
+                <input type="file" id="myfile" name="myfile">
+              </form>
+        </div>
+        <div class="test">
+            <span>Form Input Type: number</span>
+            <form>
+                <input type="number" id="b" name="b" max="50" step="10">
+              </form>
+        </div>
+        <div class="test">
+            <span>Form Input Type: Time</span>
+            <form>
+                <label for="appt">Select a time:</label>
+                <input type="time" id="appt" name="appt">
+              </form>
+        </div>
+        <h2 class="test">Html Input Attributes</h2>
+        <div>
+            <span>Autofocus Attribute</span>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" autofocus><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
               </form>
         </div>
     </body>
