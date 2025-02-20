@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test_File</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .margin-bottom-md{
+      margin-bottom: 20px;
+    }
+
+    p:first-child i {
+      color: blue;
+    } 
+
+    q:lang(no) {
+      quotes: "~" "~";
+    }
+
+    .number {
+      display: inline-block;
+      width: 500px;
+      font-size: 25px; 
+      color: #333;  /* Ensure the color is #333 here */
+      margin-bottom: 15px;
+      background-color: #d8bfd866;
+    }
+
+    .font-design p::first-line,
+    .font-design p::first-letter {
+      /* color: #ff0000; */
+      font-variant: small-caps;
+    }
+
+    /* Prevent the first-line and first-letter styles from affecting .number */
+    .number::first-line,
+    .number::first-letter {
+      color: #333;
+    }
+
+    .transparent div {
+      background-color: #04AA6D;
+      padding: 10px;
+    }
+
+    .first {
+      opacity: 0.1;
+    }
+
+    .second {
+      opacity: 0.3;
+    }
+
+    .third {
+      opacity: 0.6;
+    }
+
+    .nav-page{
+      margin-left:10%;
+      padding:1px 16px;
+      height:1000px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 10%;
+      background-color: #f1f1f1;
+      /* position: fixed; */
+      height: 100%;
+      overflow: auto;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    li a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+
+    .fixed{
+      color: rgb(219, 125, 17);
+    }
+  </style>
+</head>
+<body>
+  <div class="font-design"></div>
+    <p class="number">1</p>
+    <p>Some text <q lang="no">A quote in a paragraph</q> Some text.</p>
+
+
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+    <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+
+    <div class="margin-bottom-md">
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+      <p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+  </div>
+
+  <p class="number">2</p>
+  <div class="transparent margin-bottom-md">
+    <h1>Transparent Box</h1>
+  
+    <div class="first"><p>opacity 0.1</p></div>
+    <div class="second"><p>opacity 0.3</p></div>
+    <div class="third"><p>opacity 0.6</p></div>
+    <div><p>opacity 1 (default)</p></div>
+  </div>
+  <p class="number">3</p>
+  <div>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+      
+    <div class="nav-page">
+      <h2>Fixed Full-height Side Nav</h2>
+      <p class="fixed">fixed has been commented out for better site experience</p>
+      <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+      <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+      <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+      <p>Some text..</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+.dropbtn {
+    background-color: #d57526;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    color: #fff;
+    background-color: #777
+}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #ec812a;
+  }
+
+
+  
+/*******************************/
+/* navlist Section */
+/*******************************/
+
+.navlist {
+    position: relative;
+}
+
+.navlist li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 0;
+}
+
+.navlist li,
+.navlist a {
+    height: 44px;
+    display: block;
+}
+
+.home {
+    left: 0px;
+    width: 46px;
+    background: url('img_navsprites.gif') 0 0;
+}
+
+.prev {
+    left: 63px;
+    width: 43px;
+    background: url('img_navsprites.gif') -47px 0;
+}
+
+.next {
+    left: 129px;
+    width: 43px;
+    background: url('img_navsprites.gif') -91px 0;
+}
+
+.attr-selector{ 
+    margin-top: 100px;
+}
+
+.attr-selector a[href]{
+    background-color: #d8bfd8;
+    color: #000;
+}
+.attr-selector a[href^="https"]{
+    font-size: 30px;
+}
