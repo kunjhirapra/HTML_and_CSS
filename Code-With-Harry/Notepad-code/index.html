@@ -3,11 +3,13 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="style.css" rel="stylesheet">
 		<title>Form Testing Page</title>
 	</head>
-	<body style="font-family:sans-serif;">
-		<h1 style="text-align:center;">HTML Form</h1>
-		<form action="#" autocomplete="on">
+	<body>
+	<div class="form-page">
+		<form action="#" autocomplete="on" class="form">
+		<h1>HTML Form</h1>
 			<div>
 				<label for="fname">Full name:</label><br>
 				<input id="fname" name="fname" type="text" placeholder="John"><br><br>
@@ -17,7 +19,7 @@
 			<h2>Select Element</h2>
 			<div>
 				<label for="cars">Choose a car:</label>
-				<select id="cars" name="cars" size="5">
+				<select id="cars" name="cars">
 					<option value="Volvo">Volvo</option>
 					<option value="Audi">Audi</option>
 					<option value="Mercedes">Mercedes</option>
@@ -81,7 +83,10 @@
 				<label for="color">Choose a color:</label>
 				<input id="color" name="color" type="color">
 			</div><br>
-			<input type="button" value="Submit" style="margin:0 auto;">
+		<div class="btn-container">
+			<input type="button" value="Submit" class="btn">
+		</div>
 		</form>
+	</div>
 	</body>
 </html>

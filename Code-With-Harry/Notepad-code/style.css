@@ -1,0 +1,40 @@
+body{
+	font-family:sans-serif;
+	max-width:1120px;
+	margin: 15px auto;
+	color:#333;
+}
+
+h1{
+	text-align:center;
+}
+
+h2{
+	color:#555;
+}
+
+.form{
+	padding:0 100px;
+	/*border:2px solid black;*/
+	box-shadow: 0 32px 48px rgba(0, 0, 0,0.075);
+	border-radius: 11px;
+	background-color: #ffeded;
+	/*background-color:#ffdbdb;*/
+}
+
+.form-page{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.btn-container{
+	display:flex;
+	justify-content:center;
+}
+
+.btn{
+	margin:10px auto;
+	margin-bottom: 15px;
+}
